@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS App Store Badges</title>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" href="appstorebadges.min.css">
+    </head>
+
+    <body>
+
+        <div class="stage">
+            <h1>CSS App Store Badges</h1>
+
+            <p>
+                {{> badge-ios}}
+
+                {{> badge-mac}}
+
+                {{> badge-android}}
+
+                {{> badge-windows}}
+
+                {{> badge-amazon}}
+            </p>
+
+            <p>
+                {{> badge-ios class="badge--small"}}
+
+                {{> badge-mac class="badge--small"}}
+
+                {{> badge-android class="badge--small"}}
+
+                {{> badge-windows class="badge--small"}}
+
+                {{> badge-amazon class="badge--small"}}
+            </p>
+
+            <p>
+                {{> badge-ios class="badge--tiny"}}
+
+                {{> badge-android class="badge--tiny"}}
+
+                {{> badge-windows class="badge--tiny"}}
+
+                {{> badge-amazon class="badge--tiny"}}
+            </p>
+
+            <p>
+                Just some tinkering by <a href="https://twitter.com/kremalicious">@kremalicious</a>
+            </p>
+        </div>
+
+    </body>
+</html>

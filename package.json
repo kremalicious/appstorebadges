@@ -1,0 +1,38 @@
+{
+  "name": "appstorebadges",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matthias Kretschmann",
+    "email": "m@kretschmann.io"
+  },
+  "description": "Pure CSS/SVG based App Store badges",
+  "homepage": "https://kremalicious.com",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "assemble": "assemble/assemble#v0.6.0"
+  },
+  "devDependencies": {
+    "del": ">=1.2.0",
+    "gulp": ">=3.8.0",
+    "gulp-assemble": ">=0.3.2",
+    "gulp-autoprefixer": ">=2.3.0",
+    "gulp-connect": ">=2.0.5",
+    "gulp-cssmin": ">=0.1.7",
+    "gulp-extname": ">=0.2.0",
+    "gulp-header": "^1.7.1",
+    "gulp-htmlmin": ">=1.1.4",
+    "gulp-load-plugins": ">=0.10.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": ">=2.0.6",
+    "gulp-util": ">=3.0.6",
+    "normalize.css": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=0.10.29"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kremalicious/appstorebadges"
+  }
+}

@@ -1,0 +1,128 @@
+
+//
+// Badge Base
+//
+.badge
+    box-sizing: border-box
+    display: inline-block
+    text-align: left
+    white-space: nowrap
+    text-decoration: none
+    vertical-align: middle
+    touch-action: manipulation
+    cursor: pointer
+    user-select: none
+    border: 1px solid $badge-border
+    padding: 4px 8px
+    margin: 5px auto
+    border-radius: 4px
+    color: $badge-color
+    fill: $badge-color
+    background: $badge-background
+    line-height: 1em
+    //
+    // no specific width so badge can grow
+    // for localization
+    //
+    min-width: $badge-width
+    height: 45px
+    transition: .2s ease-out
+    box-shadow: 0 1px 2px rgba($badge-background, 20%)
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    font-family: $badge-font
+    font-weight: 500
+    text-rendering: optimizeLegibility
+    //
+    // Controversial! But prevents text flickering in
+    // Safari/Firefox when animations are running
+    //
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -moz-font-feature-settings: 'liga', 'kern'
+
+    &:hover
+    &:focus
+        background: $badge-background-hover
+        color: $badge-color-hover
+        fill: $badge-color-hover
+        border-color: $badge-border-hover
+        transform: scale(1.01) translate3d(0,-1px,0)
+        box-shadow: 0 4px 8px rgba($badge-background, 20%)
+
+     &:active
+         outline: 0
+         background: lighten($badge-background-hover, 15%)
+         transition: none
+
+
+//
+// badge Items
+//
+.badge__icon
+.badge__text
+.badge__storename
+    display: inline-block
+    vertical-align: top
+
+.badge__icon
+    width: 30px
+    height: 30px
+    margin-right: 5px
+    margin-top: 2px
+
+.badge__icon--amazon
+    // tweak visual weight in all badge variants
+    // without affecting layout
+    transform: scale(.85)
+
+.badge__text
+    letter-spacing: .08em
+    margin-top: -.1em
+    font-size: 10px
+
+.badge__storename
+    display: block
+    margin-left: 38px
+    margin-top: -17px
+    font-size: 22px
+    letter-spacing: -.05em
+
+
+//
+// Size modifiers
+//
+.badge--small
+    padding: 2px 8px
+    min-width: ($badge-width / 1.6)
+    height: 24px
+    border-radius: 3px
+
+    .badge__icon
+        width: 16px
+        height: 16px
+        margin: 1px 2px 0 0
+
+    .badge__text
+        display: none
+
+    .badge__storename
+        font-size: 12px
+        display: inline-block
+        margin: 0 0 2px 0
+        vertical-align: middle
+
+.badge--tiny
+    padding: 3px
+    width: 22px
+    height: 22px
+    min-width: 0
+    border-radius: 3px
+
+    .badge__icon
+        width: 14px
+        height: 14px
+        margin: 0
+
+    .badge__text
+    .badge__storename
+        display: none
