@@ -24,7 +24,7 @@ bower install appstorebadges --save
 Or just link to the css file:
 
 ```html
-<link rel="stylesheet" href="appstorebadges.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/kremalicious/appstorebadges/master/dist/appstorebadges.min.css">
 ```
 
 
