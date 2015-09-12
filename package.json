@@ -5,10 +5,10 @@
     "name": "Matthias Kretschmann",
     "email": "m@kretschmann.io"
   },
-  "description": "Pure CSS/SVG based App Store badges",
+  "description": "CSS/SVG based App Store badges",
   "homepage": "https://kremalicious.com",
   "license": "MIT",
-  "main": "gulpfile.js",
+  "main": "dist/appstorebadges.min.css",
   "dependencies": {
     "assemble": "assemble/assemble#v0.6.0"
   },

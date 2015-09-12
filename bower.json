@@ -1,0 +1,16 @@
+{
+  "name": "appstorebadges",
+  "version": "1.0.0",
+  "homepage": "https://github.com/kremalicious/appstorebadges",
+  "authors": [
+    "Matthias Kretschmann <m@kretschmann.io>"
+  ],
+  "description": "CSS/SVG based App Store badges",
+  "main": "dist/appstorebadges.min.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

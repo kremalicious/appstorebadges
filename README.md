@@ -1,8 +1,9 @@
 # App Store Badges
 
-> Pure CSS/SVG based App Store badges
+> CSS/SVG based App Store badges
 
-Demo | Blog post | [Codepen](http://codepen.io/kremalicious/details/EVVraP/)
+[Demo](http://lab.kremalicious.com/appstorebadges/) | Blog post | [Codepen](http://codepen.io/kremalicious/details/EVVraP/)
+
 
 ## Usage
 
@@ -24,13 +25,14 @@ Or just link to the css file:
 <link rel="stylesheet" href="appstorebadges.min.css">
 ```
 
+
 ## Development
 
 First you need:
 
 - node & npm
 
-And install dependencies:
+Install dependencies:
 
 ```bash
 npm install
@@ -42,11 +44,8 @@ Then spin up livereloading dev server under http://localhost:1337
 gulp
 ```
 
-Or only compile new dist files:
+Or only compile new dist files with `gulp build`.
 
-```bash
-gulp build
-```
 
 # The MIT License (MIT)
 

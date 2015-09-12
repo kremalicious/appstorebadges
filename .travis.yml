@@ -1,0 +1,10 @@
+sudo: false
+language: node
+cache:
+    directories:
+    - node_modules
+before_script:
+    - npm install gulp -g
+    - npm install
+script:
+    - gulp build
