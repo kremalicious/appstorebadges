@@ -72,7 +72,7 @@ gulp.task('html', function() {
 gulp.task('css', function() {
     return gulp.src(src + 'styl/appstorebadges.styl')
         .pipe($.stylus({ 'include css': true })).on('error', onError)
-        .pipe($.autoprefixer({ browsers: 'last 2 versions, ie 9' }))
+        .pipe($.autoprefixer({ browsers: ['last 2 versions', 'safari >= 5', 'firefox >= 21', 'ie 9', 'opera >= 12.1', 'ios >= 6', 'android >= 4'] }))
         .pipe($.cssmin())
         .pipe($.header(banner, { pkg: pkg }))
         .pipe($.rename({ suffix: '.min' }))
