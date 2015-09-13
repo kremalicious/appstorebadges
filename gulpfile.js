@@ -21,7 +21,10 @@ var onError = function(error) {
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 var src      = 'src/',
-    dist     = 'dist/';
+    dist     = 'dist/',
+    s3bucket = 'lab.kremalicious.com',
+    s3path   = '/appstorebadges/',
+    s3region = 'eu-central-1';
 
 
 // code banner
@@ -112,3 +115,32 @@ gulp.task('default', ['css', 'html', 'watch', 'connect']);
 // Full build
 //
 gulp.task('build', ['css', 'html']);
+
+
+//
+// Deploy to S3
+//
+gulp.task('deploy', function() {
+    var publisher = $.awspublish.create({
+        params: {
+            'Bucket': s3bucket
+        },
+        'region': s3region
+    });
+
+    // define custom headers
+    var headers = {
+        'Cache-Control': 'max-age=315360000, no-transform, public',
+        'x-amz-acl': 'public-read'
+    };
+
+    return gulp.src(dist + '*')
+        .pipe($.rename(function (path) {
+            path.dirname += s3path;
+        }))
+        .pipe($.awspublish.gzip({ ext: '' })) // gzip all the things
+        .pipe(publisher.publish(headers))
+        .pipe($.awspublish.reporter({
+            states: ['create', 'update', 'delete']
+        }));
+});
