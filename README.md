@@ -4,7 +4,7 @@
 
 <img width="1022" alt="appstorebadges" src="https://cloud.githubusercontent.com/assets/90316/9833788/eee686ae-59a5-11e5-8457-feb08f0bf3cc.png">
 
-[Demo](http://lab.kremalicious.com/appstorebadges/) | Blog post | [Codepen](http://codepen.io/kremalicious/details/EVVraP/)
+[Demo](http://lab.kremalicious.com/appstorebadges/) | [Blog post](https://kremalicious.com/css-app-store-badges/) | [Codepen](http://codepen.io/kremalicious/details/EVVraP/)
 
 
 ## Usage
