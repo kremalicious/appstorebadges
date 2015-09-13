@@ -6,7 +6,7 @@
     "email": "m@kretschmann.io"
   },
   "description": "CSS/SVG based App Store badges",
-  "homepage": "https://kremalicious.com",
+  "homepage": "https://kremalicious.com/css-app-store-badges/",
   "license": "MIT",
   "main": "dist/appstorebadges.min.css",
   "dependencies": {
