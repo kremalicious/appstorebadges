@@ -73,7 +73,10 @@ gulp.task('html', function() {
 // Styles
 //
 gulp.task('css', function() {
-    return gulp.src(src + 'styl/appstorebadges.styl')
+    return gulp.src([
+            src + 'styl/*.styl',
+            '!' + src + 'styl/_*.styl'
+        ])
         .pipe($.stylus({ 'include css': true })).on('error', onError)
         .pipe($.autoprefixer({ browsers: ['last 2 versions', 'safari >= 5', 'firefox >= 21', 'ie 9', 'opera >= 12.1', 'ios >= 6', 'android >= 4'] }))
         .pipe($.cssmin())
